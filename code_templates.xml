@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+
+	<template autoinsert="true" context="java" deleted="false" description="Mockito ArgumentCaptor definition" enabled="true" name="argument_captor">
+		${:import(org.mockito.ArgumentCaptor)}
+		ArgumentCaptor&lt;${argType}&gt; ${cursor}Captor = ArgumentCaptor.forClass(${argType}.class);
+	</template>
+
+	<template autoinsert="true" context="java" deleted="false" description="SLF4J Logger definition" enabled="true" name="logger">
+		${:import(org.slf4j.Logger,org.slf4j.LoggerFactory)}
+		private static final Logger LOGGER = LoggerFactory.getLogger(${enclosing_type}.class);
+	</template>
+
+	<template autoinsert="true" context="java" deleted="false" description="Spring bean definition" enabled="true" name="bean">
+		${:import(org.springframework.context.annotation.Bean)}
+		@Bean&#13;
+		public ${argType} get${argType}() {&#13;
+			return new ${argType}Impl();&#13;
+		}&#13;
+	</template>
+
+</templates>
