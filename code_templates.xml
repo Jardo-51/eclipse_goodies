@@ -25,4 +25,9 @@
 		private ${argType} ${argType};
 	</template>
 
+	<template autoinsert="true" context="java" deleted="false" description="Not implemented exception" enabled="true" name="not_implemented">
+		// TODO: implement this
+		throw new UnsupportedOperationException("Not implemented yet.");
+	</template>
+
 </templates>
