@@ -19,4 +19,10 @@
 		}&#13;
 	</template>
 
+	<template autoinsert="true" context="java" deleted="false" description="Spring autowired bean" enabled="true" name="autowired_bean">
+		${:import(org.springframework.beans.factory.annotation.Autowired)}
+		@Autowired
+		private ${argType} ${argType};
+	</template>
+
 </templates>
